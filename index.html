@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f1e7">
+<meta name="description" content="New Possibilities: a private, practical consultation with April Fletcher to explore what you can do with your experience, knowledge and ideas.">
+<title>New Possibilities | A Private Consultation with April Fletcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f1e7;--white:#fffcf6;--ink:#2c2621;--muted:#6b6054;--line:#dfd3c1;--rust:#9e4c31;--rustdark:#813a27;--gold:#c9a467;--sage:#68725b;--max:1080px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;font-size:16px;line-height:1.65}
+h1,h2,h3,p{margin-top:0}
+h1,h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.13;letter-spacing:-.018em}
+h1{font-size:clamp(2.55rem,5.9vw,5rem);max-width:850px;margin-bottom:25px}
+h2{font-size:clamp(2rem,4vw,3.25rem);margin-bottom:20px}
+h3{font-size:1.15rem;line-height:1.35;margin-bottom:10px}
+p{max-width:72ch}
+a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid var(--rust);outline-offset:4px}
+img{max-width:100%;display:block}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+.button{display:inline-flex;align-items:center;justify-content:center;background:var(--rust);color:#fff;text-decoration:none;font-weight:700;padding:14px 23px;min-height:48px;transition:background .2s;border:1px solid var(--rust);border-radius:3px}
+.button:hover{background:var(--rustdark)}
+.button.outline{background:transparent;color:var(--ink);border-color:var(--ink)}.button.outline:hover{background:var(--ink);color:white}
+.kicker{color:var(--rust);text-transform:uppercase;letter-spacing:.17em;font-weight:700;font-size:.75rem;display:block;margin-bottom:18px}
+.muted{color:var(--muted)}.small{font-size:.875rem}
+header{border-bottom:1px solid var(--line);background:var(--paper)}
+header .wrap{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.25}.brand b{font-family:"DM Serif Display",Georgia,serif;font-size:1.35rem;font-weight:400}.brand span{color:var(--muted);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}
+nav{display:flex;align-items:center;gap:27px}nav a:not(.button){text-decoration:none;font-size:.9rem}
+.hero{position:relative;overflow:hidden;padding:90px 0 102px;background:var(--white)}
+.hero:before{content:"";position:absolute;right:-130px;top:-175px;width:480px;height:480px;border-radius:50%;border:55px solid rgba(201,164,103,.16);pointer-events:none}
+.hero:after{content:"";position:absolute;right:80px;bottom:-180px;width:240px;height:240px;border-radius:50%;border:1px solid rgba(158,76,49,.22);pointer-events:none}
+.hero-content{position:relative;z-index:1}
+.hero .lede{font-size:clamp(1.1rem,2vw,1.25rem);max-width:690px;line-height:1.7;color:#51483f}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:31px}
+.hero-price{font-size:.91rem;color:var(--muted)}
+section{padding:86px 0}
+.section-intro{max-width:740px;margin-bottom:42px}
+.section-intro>p{color:var(--muted);font-size:1.06rem}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.feature{padding:30px;background:var(--white);border:1px solid var(--line)}
+.number{color:var(--rust);font-size:.8rem;letter-spacing:.08em;font-weight:700;margin-bottom:26px}
+.feature p{color:var(--muted);font-size:.95rem;margin-bottom:0}
+.tint{background:#eee4d4}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:78px;align-items:start}
+.pathways{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.pathways article{padding:18px 0 20px;border-bottom:1px solid var(--line)}
+.pathways p{font-size:.94rem;color:var(--muted);margin:0}
+.emphasis{border-left:3px solid var(--rust);padding-left:25px;font-family:"DM Serif Display",Georgia,serif;font-size:clamp(1.35rem,2.5vw,1.85rem);line-height:1.45;margin-top:28px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:45px}
+.step{border-top:1px solid var(--rust);padding-top:22px}
+.step .number{margin-bottom:14px}
+.step p{color:var(--muted)}
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:175px minmax(0,1fr);gap:50px;align-items:start;max-width:880px}
+.portrait{width:175px;aspect-ratio:4/5;object-fit:cover;object-position:center 18%;border-radius:2px;background:#dbc8aa}
+.about p{color:#51483f}
+.text-link{color:var(--rust);text-decoration-thickness:1px;text-underline-offset:4px}
+.offer{background:#302a24;color:var(--white)}
+.offer h2{color:var(--white)}
+.offer .kicker{color:#e0b881}
+.offer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:start}
+.price{display:flex;align-items:baseline;gap:16px;margin:14px 0 6px}
+.price strong{font-size:clamp(3rem,6vw,4.5rem);font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1}
+.price del{color:#bcae9d;font-size:1.3rem}
+.offer .subtle{color:#d8cbbc}
+.offer .button{background:#c46d4d;border-color:#c46d4d}.offer .button:hover{background:#ac593c}
+.offer ul{padding-left:19px;line-height:2;color:#eee6dc}
+.offer .fineprint{font-size:.83rem;color:#d8cbbc;max-width:430px}
+.faq{background:var(--paper)}
+.faq-list{max-width:800px}
+details{border-top:1px solid var(--line);padding:20px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:25px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--rust);font-size:1.5rem;line-height:1}
+details[open] summary:after{content:"−"}
+details p{margin:14px 0 0;color:var(--muted)}
+.closing{text-align:center;background:var(--white)}
+.closing p{margin-left:auto;margin-right:auto;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:.86rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer a{color:inherit}
+@media(max-width:800px){nav a:not(.button){display:none}.grid3,.steps{grid-template-columns:1fr}.split,.offer-grid{grid-template-columns:1fr;gap:30px}.about-grid{grid-template-columns:135px 1fr;gap:25px}.portrait{width:135px}.hero{padding:65px 0 76px}section{padding:65px 0}}
+@media(max-width:530px){.wrap{width:calc(100% - 36px)}header .wrap{min-height:73px}header .button{padding:10px 13px;font-size:.8rem}.hero{padding:55px 0 62px}section{padding:55px 0}.pathways{grid-template-columns:1fr}.feature{padding:24px}.about-grid{grid-template-columns:1fr}.portrait{width:118px;aspect-ratio:4/5}.hero-actions{align-items:flex-start;flex-direction:column}.offer .button,.closing .button{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><b>New Possibilities</b><span>with April Fletcher</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#explore">What we can explore</a>
+      <a href="#about">About April</a>
+      <a class="button" href="#book">Book a consultation</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-content">
+      <span class="kicker">A private, one-hour consultation</span>
+      <h1>What else could you do with what you already know?</h1>
+      <p class="lede">You've spent years developing knowledge, skills and interests. Maybe retirement is approaching. Maybe there's an idea you've never had time to pursue. Now you're wondering what might actually be possible.</p>
+      <p class="lede">Let's explore the practical options—including opportunities online—and make sense of what it would take to get started.</p>
+      <div class="hero-actions">
+        <a class="button" href="#book">Explore a private consultation</a>
+        <span class="hero-price"><strong>$300 introductory rate</strong> · Regularly $500 · Through Nov. 15</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="explore" aria-labelledby="explore-title">
+    <div class="wrap">
+      <div class="section-intro">
+        <span class="kicker">The starting point</span>
+        <h2 id="explore-title">You don't have to have it all figured out.</h2>
+        <p>You may have a specific project in mind, or just a sense that your experience could become something more. Either is a perfectly good place to begin.</p>
+      </div>
+      <div class="grid3">
+        <article class="feature"><div class="number">01 / POSSIBILITIES</div><h3>“What could I actually do?”</h3><p>Look beyond the obvious uses of your experience and consider realistic directions worth investigating.</p></article>
+        <article class="feature"><div class="number">02 / PRACTICALITIES</div><h3>“How would it work?”</h3><p>Understand the tools, platforms, costs and decisions involved before investing your time and money.</p></article>
+        <article class="feature"><div class="number">03 / NEXT STEPS</div><h3>“Where should I begin?”</h3><p>Talk through the options and identify what deserves your attention first, given your situation.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint" aria-labelledby="ways-title">
+    <div class="wrap split">
+      <div>
+        <span class="kicker">Different ways forward</span>
+        <h2 id="ways-title">Your experience may have more possibilities than you think.</h2>
+        <p class="muted">The online world offers many ways to share knowledge, build something independently or explore a long-standing interest. They don't all require the same budget, skills or appetite for visibility.</p>
+        <div class="emphasis">The point isn't to do everything. It's to understand the choices well enough to decide what fits you.</div>
+      </div>
+      <div class="pathways">
+        <article><h3>Teaching & sharing knowledge</h3><p>Private instruction, workshops, guides or other ways of passing on what you know.</p></article>
+        <article><h3>Digital products</h3><p>Original resources, templates, patterns or tools people can use.</p></article>
+        <article><h3>Creative projects</h3><p>Ideas involving music, art, craft, writing, video or other interests.</p></article>
+        <article><h3>Independent services</h3><p>Consulting or focused help informed by your experience.</p></article>
+        <article><h3>Online publishing</h3><p>Videos, newsletters and other ways to reach a relevant audience.</p></article>
+        <article><h3>Something else entirely</h3><p>We can explore an idea that doesn't fit neatly into any category.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-intro">
+        <span class="kicker">The conversation</span>
+        <h2 id="how-title">One hour, focused on your questions.</h2>
+        <p>This is a personalized consultation—not a course, motivational speech or ongoing coaching program.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="number">01</div><h3>Bring what's on your mind</h3><p>An idea, a question, an interest you've put aside or a possible new direction. You don't need a polished plan.</p></div>
+        <div class="step"><div class="number">02</div><h3>Explore it together</h3><p>We'll examine the practical possibilities and discuss relevant tools, platforms, business models and obstacles.</p></div>
+        <div class="step"><div class="number">03</div><h3>Leave better informed</h3><p>The goal is greater understanding of your options and what you might investigate or try next—not a promise of a particular outcome.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <img class="portrait" src="images/april-bass.png" alt="April Fletcher performing on electric bass" loading="lazy" width="175" height="219">
+      <div>
+        <span class="kicker">A little about me</span>
+        <h2 id="about-title">I'm April Fletcher.</h2>
+        <p>My experience spans more than 30 years in entertainment, production, business operations and technology. Along the way, I've learned how to move between creative ideas and the systems that make them work.</p>
+        <p>Since around 2010, I've explored the digital side hands-on: websites, affiliate marketing, e-commerce, Etsy shops, publishing, paid advertising, and more recently AI-assisted applications and workflows.</p>
+        <p>That doesn't mean every idea is worth pursuing—or that there's one formula everyone should follow. It means I can help you understand an unfamiliar landscape through the perspective of someone who's spent years working within it.</p>
+        <p class="small muted">Want the longer background? <a class="text-link" href="https://aprilfletcherbio.carrd.co/" target="_blank" rel="noopener noreferrer">Read my professional bio</a> or <a class="text-link" href="https://tinyurl.com/contra-profile" target="_blank" rel="noopener noreferrer">explore selected work</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer" id="book" aria-labelledby="book-title">
+    <div class="wrap offer-grid">
+      <div>
+        <span class="kicker">New Possibilities</span>
+        <h2 id="book-title">A practical conversation about what comes next.</h2>
+        <p class="subtle">A private, personalized 60-minute consultation. Come with questions, ideas or curiosity. We'll work with your particular experience and interests.</p>
+        <ul>
+          <li>One focused, private session</li>
+          <li>Practical discussion of opportunities and considerations</li>
+          <li>No ongoing program or additional purchase required</li>
+        </ul>
+      </div>
+      <div>
+        <span class="kicker">Introductory consultation</span>
+        <div class="price"><strong>$300</strong><del>$500</del></div>
+        <p class="subtle small">Introductory offer ends November 15, 2026.</p>
+        <p class="subtle">TidyCal displays the regular $500 price. Use coupon code <strong>FUN</strong> during booking for $200 off.</p>
+        <a class="button" href="https://tidycal.com/creativeequityhub/whats-next-exploring-new-possibilities-after-retirement" target="_blank" rel="noopener noreferrer">Choose your consultation time</a>
+        <p class="fineprint" style="margin-top:18px">Scheduling and payment take place securely on TidyCal. Please verify the discounted total before completing payment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <span class="kicker">A few practical questions</span>
+      <h2 id="faq-title">Before you book</h2>
+      <div class="faq-list">
+        <details><summary>Do I need to know exactly what I want to do?</summary><p>No. You can arrive with a well-developed idea or with questions about what's possible. The conversation starts wherever you are.</p></details>
+        <details><summary>Is this retirement or financial planning?</summary><p>No. This session is about exploring ways to apply your knowledge, skills and interests—especially practical and digital opportunities. It is not financial, investment or retirement-benefits advice.</p></details>
+        <details><summary>Will you build a website or product for me during the session?</summary><p>No. This is a consultation focused on understanding options and making informed decisions, not a done-for-you implementation service.</p></details>
+        <details><summary>Am I signing up for a coaching program?</summary><p>No. A single session is a complete service. There is no obligation to book more appointments or purchase additional work.</p></details>
+        <details><summary>How does the introductory price work?</summary><p>The regular booking price is $500. Through November 15, use the code <strong>FUN</strong> on TidyCal for $200 off, bringing the total to $300. Confirm the price shown before paying.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="end-title">
+    <div class="wrap">
+      <span class="kicker">Your experience is the starting point</span>
+      <h2 id="end-title">Curious about what's possible?</h2>
+      <p>You don't have to spend months figuring out every platform or possibility alone. Start with one informed conversation.</p>
+      <a class="button" href="#book">See consultation details</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 April Fletcher · Creative Equity Hub</span>
+    <span><a href="https://aprilfletcherbio.carrd.co/" target="_blank" rel="noopener noreferrer">About April</a> · <a href="https://tinyurl.com/contra-profile" target="_blank" rel="noopener noreferrer">Selected work</a></span>
+  </div>
+</footer>
+</body>
+</html>
